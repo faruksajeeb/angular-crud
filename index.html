@@ -14,10 +14,77 @@
   <body>
     <h1>Sajeeb Angular</h1>
 	<hr>
-	<div ng-app="">
-	  <p>Name: <input type="text" ng-model="name"></p>
-	  <p ng-bind="name"></p>
+	<div class="container">
+	<h3>Users</h3>
+	<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Create User
+</button>
+
+			<table class="table">
+		  <thead>
+			<tr>
+			  <th scope="col">#</th>
+			  <th scope="col">First</th>
+			  <th scope="col">Last</th>
+			  <th scope="col">Email</th>
+			  <th scope="col">Action</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+			  <th scope="row">1</th>
+			  <td>Mark</td>
+			  <td>Otto</td>
+			  <td>@mdo</td>
+			  <td>
+			  <button type="button" class="btn btn-warning">Edit</button>
+			  <button type="button" class="btn btn-danger">Delete</button>
+			  </td>
+			</tr>
+			<tr>
+			  <th scope="row">2</th>
+			  <td>Jacob</td>
+			  <td>Thornton</td>
+			  <td>@fat</td>
+			  <td>
+			  <button type="button" class="btn btn-warning">Edit</button>
+			  <button type="button" class="btn btn-danger">Delete</button>
+			  </td>
+			</tr>
+			<tr>
+			  <th scope="row">3</th>
+			  <td >Larry </td>
+			  <td >The Bird</td>
+			  <td>@twitter</td>
+			  <td>
+			  <button type="button" class="btn btn-warning">Edit</button>
+			  <button type="button" class="btn btn-danger">Delete</button>
+			  </td>
+			</tr>
+		  </tbody>
+		</table>
+		
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add User</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 	</div>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
